@@ -6,14 +6,14 @@ import time
 
 # content
 def mailat(ram,max_cpu):
-    sender = "netcadmailtest@gmail.com"
-    reciever = ["naciyilmaz05@gmail.com","receptopalak@gmail.com"]
-    password = "ntc123**"
-    msg_body = """Antalya Büyükşehir Belediyesi CPU %90 ı Geçti Çabuk Bak! CPU= """ +  str(max_cpu) +""" RAM=""" + str(ram)
+    sender = "Gönderen mail"
+    reciever = ["alıcı1","alıcı2"]
+    password = "mail şifresi"
+    msg_body = """CPU= """ +  str(max_cpu) +""" RAM=""" + str(ram)
     
     # action
     msg = EmailMessage()
-    msg['subject'] = 'Antalya Büyükşehir Belediyesi CPU %90 ıGeçti Çabuk Bak!'   
+    msg['subject'] = 'Bilgilendirme kısmı'   
     msg['from'] = sender
     msg['to'] = reciever
     msg.set_content(msg_body)
